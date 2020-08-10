@@ -1,0 +1,64 @@
+# question №1
+name = input('Your name')
+print('Hello!', name,'string', 1, 2, 3,)
+var_str = "This is a string"
+var_str2 = "This is \n a second string"
+var_str3 = """This is also  
+           a \"string\" of  
+           several lines"""
+print(1, var_str)
+print(2, var_str2)
+print(3, var_str3)
+
+a = int(input("enter an integer"))
+print (a ** 10)
+
+#question №2
+ss = int(input("enter seconds"))
+hour = str(ss // 3600)
+minutes = str((ss // 60) % 60)
+seconds = str(ss % 60)
+print('hh:mm:ss =', hour + ':' + minutes+':' + seconds)
+
+#question №3
+n = int(input("enter an integer"))
+var_str = n
+var_str2 = var_str + var_str
+var_str3 = var_str + var_str2 #не поняла почему строки не сложились как строки?
+num1 = int(var_str)
+num2 = int(var_str2)
+num3 = int(var_str3)
+print(num1 + num2 + num3)
+
+#question №4
+a = int(input("enter an integer"))
+b = 0
+while a:
+    if a % 10 > b:
+        b = a % 10
+    a //= 10
+print(b, 'самая большая цифра в числе')
+
+#question №5
+a = int(input("Введите выручку"))
+b = int(input("Введите издержки"))
+if  a > b:
+    print('У фирмы имеется прибыль')
+if b > a:
+    print('У фирмы имеется убыток')
+if a > b:
+    print( (a - b) / a, '- Рентабельность фирмы')
+
+с = int(input("Введите число сотрудников"))
+if a > b:
+    print( (a - b) / с, '-Прибыль фирмы в расчёте на одного сотрудника')
+
+# question №6
+
+
+
+
+
+
+
+
