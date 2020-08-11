@@ -15,16 +15,16 @@ print (a ** 10)
 
 #question №2
 ss = int(input("enter seconds"))
-hour = str(ss // 3600)
-minutes = str((ss // 60) % 60)
-seconds = str(ss % 60)
-print(f" hh:mm:ss {hour} : {minutes} : {seconds}")
+hour = ss // 3600
+minutes = ss // 60 % 60
+seconds = ss % 60
+print(f"{hour:>02}:{minutes:>02}:{seconds:>02}")
 
 #question №3
 n = int(input("enter an integer"))
 var_str = n
 var_str2 = var_str + var_str
-var_str3 = var_str + var_str2 #почему строки не сложились как строки
+var_str3 = var_str + var_str2 #не поняла почему строки не сложились как строки, и у вас такой же результат в варианте работы со строкой
 num1 = int(var_str)
 num2 = int(var_str2)
 num3 = int(var_str3)
@@ -55,14 +55,14 @@ if a > b:
 
 # question №6
 a = int(input("Введите количество километров в 1-й день"))
-b = int(input("Введите минимальное количество километров"))
-c = 1
+b = int(input("Введите желаемое количество километров"))
+day = 1
 k = a
-while a <= b:
-    a = a + (a * 0.1)
-    с = c + 1
-    k = k + a
-    print(f' Необходимое число километров будет достигнуто на %.d день' % c )
+while k <= b:
+    k *= 1.1
+    day += 1
+
+    print(day)
 
 
 
