@@ -24,7 +24,7 @@ print(f" hh:mm:ss {hour} : {minutes} : {seconds}")
 n = int(input("enter an integer"))
 var_str = n
 var_str2 = var_str + var_str
-var_str3 = var_str + var_str2 #почему строки не сложились как строки?
+var_str3 = var_str + var_str2 #почему строки не сложились как строки
 num1 = int(var_str)
 num2 = int(var_str2)
 num3 = int(var_str3)
